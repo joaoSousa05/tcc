@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,136 +8,85 @@
     <title>Document</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
-        <link rel="stylesheet" href="style.css">
-        
+    <link rel="stylesheet" href="css/style.css">
+
 </head>
+<!--cabeçario-->
+
 <body>
+    <img src="img/fundo.png"class="imgFundo" alt="">
     <header>
         <nav class="navbar navbar-expand-lg bg-body-tertiary">
             <div class="container-fluid">
-              <h3 class="headerH3">SOLUTION</h3>
-              <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav">
-                  <li class="nav-item">
-                    <a class="nav-link active" aria-current="page" href="#"><h3 class="headerH3">Home</h3></a>
-                  </li>
-                </ul>
-                <h3 class="headerH3">lOGIN: <label for="" id="loginUsuario">*****</label></h3>
-              </div>
-              <button class="sair" id="sair" onclick="sair()">Sair</button>
+                <h3 class="logo">SOLUTION</h3>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <h3 class="usuario">lOGIN: <label for="" id="loginUsuario" style="color: white;">joao</label></h3>
+                </div>
+                <button class="sair" id="sair" onclick="sair()">Sair</button>
             </div>
-          </nav>
+        </nav>
     </header>
-<main class="row">
-    
-    <div id="navegacaoPaginas" class="">
-    
-        <img id="logo" src="img/BMW_logo.png" alt="">
 
-        <a href="">
-            <div class="paginas">
-               PÁGINA INICIAL
-            </div>
-        </a>
-
-    <a href="" id="Livro">
-        <div class="paginas">
-            LIVROS
+    <div class="btn-group">
+        <div class="botaoPag">
+            <button type="button" onclick="window.location.href='index.html'" class=" bntPag mx-3">INICIO</button>
+            <button type="button" id="cadastroLivros" class=" bntPag  mx-3">LIVROS</button>
+            <button type="button" id="alunos" class=" bntPag mx-3">ALUNOS</button>
+            <button type="button" id="emprestimo" class=" bntPag btn-info mx-3">EMPRESTIMO</button>
+            <button type="button" id="cadastroAlunos" class=" bntPag mx-3">EMPRESTADOS</button>
+            <button type="button" id="livros" class="bntPag  mx-3">PENDENTES</button>
+            <button type="button" id="" class=" bntPag btn-info mx-3">ENTREGUES</button>
         </div>
-    </a>
-    
-
-    <button id="livros"> livros </button>
-
-    <a href="">
-        <div class="paginas">
-            LEITORES
-        </div>
-    </a>
-    <a href="">
-        <div class="paginas">
-           EMPRESTIMO LIVROS
-        </div>
-    </a>
-    
-    <a href="">
-        <div class="paginas">
-            LIVROS EMPRESTADOS
-        </div>
-    </a>
-    <a href="">
-        <div class="paginas">
-            LIVROS PENDENTES
-        </div>
-    </a>
-    
-    <a href="">
-        <div class="paginas">
-           LIVROS ENTREGUES
-        </div>
-    </a>
-    
     </div>
-    
-    <div id="principal" class="">
-        <h1 id="sistema">Sistema Biblioteca
-        </h1>
-        <div class="row">
-            <div class="col-md-2 r">
-                <img class="imgPequenas" src="img/BMW_logo.png" alt="">
-                <h4>Livros cadastrado</h4>
-                <h5>TOTAL: <label for="">00</label></h5>
-            </div>
-            <div class="col-md-2 r">
-                <img class="imgPequenas" src="img/BMW_logo.png" alt="">
-                <h4>Livros Pendentes</h4>
-                <h5>TOTAL: <label for="">00</label></h5>
-            </div>
-            <div class="col-md-2 r">
-                <img class="imgPequenas" src="img/BMW_logo.png" alt="">
-                <h4>Estudantes</h4>
-                <h5>TOTAL: <label for="">00</label></h5>
-            </div>
-        </div>
 
-        <div class="row">
-            <div class="col-md-2 r">
-                <img class="imgPequenas" src="img/BMW_logo.png" alt="">
-                <h4>Livros Emprestados</h4>
-                <h5>TOTAL: <label for="">00</label></h5>
-            </div>
-            <div class="col-md-2 r x">
-                
-            </div>
+
+    <main class="">
+        <!--conteudo principal-->
+        <div id="principal" class="">
+            <h1 id="sistema">Sistema Biblioteca</h1>
            
-        </div>
+                <div class="row conteudoPrincipal ">
+                    <div class="col-md-2 caixas caixa1">
+                        <img src="img/livros.png " style="height: 40%; margin-top: 22px;" alt="">
+                        <h4>Livros Cadastrado</h4>
+                        <h5>TOTAL: <label for="">00</label></h5>
+                    </div>
+                    <div class="col-md-2 caixas caixa2">
+                        <img src="img/alarme.png" style="height: 40%; margin-top: 16px; margin-bottom: 4px;"
+                            alt="">
+                        <h4 class="imgAlarme">Livros Pendentes</h4>
+                        <h5 class="imgAlarme">TOTAL: <label for="">00</label></h5>
+                    </div>
+                    <div class="col-md-2 caixas caixa3">
+                        <img src="img/leitor.png" style="height: 40%; margin-top: 20px;"
+                            alt="">
+                        <h4>Estudantes</h4>
+                        <h5>TOTAL: <label for="">00</label></h5>
+                    </div>
+                </div>
+                <div class="row conteudoPrincipal">
+                    <div class="col-md-2 caixas caixa4">
+                        <img src="img/lupa-livro.png" style="height: 40%; margin-top: 20px;" alt="">
+                        <h4>Livros Emprestados</h4>
+                        <h5>TOTAL: <label for="">00</label></h5>
+                    </div>
+                    <div class="col-md-2 caixas caixa5">
+                    </div>
+                </div>
+            </div>
 
+    </main>
 
-    </div>
-   
-</main>
-    
+    <!--script paginas-->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="paginas/scriptpag.js"></script>
 
-
-
-<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-
-<script>
-function sair(){
-    location.href= "login.html";
-}
-
-$(document).ready(function(){
-  $("#livros").click(function(){
-    $("#principal").load("livros.js");
-  });
-});
-
-</script>
-
+    <!--script login-->
+    <script src="login/scriplog.js"></script>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
         crossorigin="anonymous"></script>
 </body>
+
 </html>
